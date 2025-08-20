@@ -51,13 +51,16 @@ void sortString() {
     cout << "Sorted string: " << s << endl;
 }
 void Lowercase() {
-    char c;
-    cout << "Enter character: ";
-    cin >> c;
-    if(c >= 'A' && c <= 'Z') {
-        c = c + 32;
+    string s;
+    cout << "Enter string: ";
+    cin >> s;
+
+    for (int i = 0; i < s.length(); i++) {
+        if (s[i] >= 'A' && s[i] <= 'Z') {
+            s[i] = s[i] - 'A' + 'a'; 
+        }
     }
-    cout << "Lowercase: " << c << endl;
+    cout << "Lowercase: " << s << endl;
 }
 int main(){
     concate();
@@ -66,4 +69,5 @@ int main(){
     sortString();
     Lowercase();
     return 0;
+
 }
