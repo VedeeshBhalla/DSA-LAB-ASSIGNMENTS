@@ -14,8 +14,8 @@ int main(){
 
     sort(arr, arr+n); 
 
-    int count = 0;    
-    for(int i=0;i<n;i++){ 
+    int count = 1;    
+    for(int i=1;i<n;i++){ 
         if(arr[i] != arr[i-1]){
             count++;
         }
@@ -24,3 +24,4 @@ int main(){
     cout << "Number of distinct elements: " << count << endl;
     return 0;
 }
+
